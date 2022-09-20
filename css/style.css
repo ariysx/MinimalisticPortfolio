@@ -1,0 +1,203 @@
+@import "font.css";
+@import "utils.css";
+@import "rinos.css";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size:  1.15em;
+}
+
+/*body {*/
+/*    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+/*    background-size: 400% 400%;*/
+/*    animation: gradient 15s ease infinite;*/
+/*    height: 100vh;*/
+/*}*/
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    /*scroll-padding-top: 6em;*/
+}
+
+body {
+    position: relative;
+}
+
+#navigation .container-fluid {
+    padding: 0;
+}
+
+#navigation {
+    /*padding-bottom: 6em;*/
+}
+
+.navbar {
+    /*filter: drop-shadow(0 0 20px rgba(0,0,0,0.20));*/
+    border-radius: 3.5rem;
+    margin: 1em 5em 0 5em;
+    background-color: rgba(238, 238, 238, 0.7) !important;
+    backdrop-filter: blur(24px);
+}
+
+.nav-link {
+    border-bottom: transparent 3px solid;
+    display: inline-block;
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: gray 3px solid;
+}
+
+#me {
+    background: url("../assets/img/blob-scatter-haikei.svg") center center;
+    background-size: cover;
+}
+
+.me-img {
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.20));
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.37); !important;
+    backdrop-filter: blur(5px) !important;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.15);
+    outline: none;
+    border: none;
+    transition: transform ease 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15.5vw;
+    object-fit: cover;
+    border-radius: var(--bs-card-inner-border-radius);
+}
+
+.card-footer {
+    border-top: none;
+
+}
+
+.external-link {
+    color: black;
+    font-size: 2.5em;
+}
+
+.external-link:hover {
+    color: initial;
+}
+
+.tags {
+    text-decoration: none;
+}
+
+/*.splide__list li {*/
+/*    padding-top: 2.5em;*/
+/*    padding-bottom: 2.5em;*/
+/*}*/
+
+/*.splide__list li:nth-child(1) {*/
+/*    padding-left: 5em !important;*/
+/*}*/
+
+/*.splide__list li:nth-child(2n) {*/
+/*    padding-right: 2.5em;*/
+/*    padding-left: 2.5em;*/
+/*}*/
+
+/*.splide__list li:nth-child(3n) {*/
+/*    padding-right: 5em !important;*/
+/*}*/
+
+/*.splide__list li:nth-child(4n) {*/
+/*    padding-left: 5em !important;*/
+/*}*/
+
+.splide__pagination__page.is-active {
+    background: black !important;
+}
+
+.github-link {
+    display: block;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+.github-link:hover {
+    color: black;
+}
+
+.github-link-arrow {
+    transition: transform ease 0.3s;
+}
+
+.github-link:hover .github-link-arrow {
+    transform: translateX(1em);
+}
+
+.more-arrow {
+    animation: portfolio-link-arrow 2s linear infinite;
+    color: black;
+}
+
+.social-card > .col {
+    background-color: rgba(255, 255, 255, 0.37); !important;
+    backdrop-filter: blur(5px) !important;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,10%);
+    outline: none;
+    border: none;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 3em 1em;
+}
+
+@keyframes portfolio-link-arrow {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-0.25em); }
+    100% { transform: translateY(0); }
+}
+
+@media (max-width: 991.98px) {
+    .card-img-top {
+        height: auto;
+    }
+
+    .navbar {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .application {
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+
+

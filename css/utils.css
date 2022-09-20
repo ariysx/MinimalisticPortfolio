@@ -1,0 +1,74 @@
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.img-100 {
+    width: 100%;
+}
+
+.img-50 {
+    width: 50%;
+}
+
+.message-me {
+    display: inline-block;
+    background: rgba(0,0,0,8%);
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 0.5em;
+    width: auto;
+}
+
+.message-form {
+    /* This bit sets up the horizontal layout */
+    display:flex;
+    flex-direction:row;
+
+    /* This bit draws the box around it */
+    border:1px solid rgba(0,0,0,10%);
+    border-radius: 1em;
+
+    /* I've used padding so you can see the edges of the elements. */
+    /*padding: 0.5em 1em;*/
+}
+
+.message-form textarea, .message-form input {
+    /* Tell the input to use all the available space */
+    flex-grow:2;
+    /* And hide the input's outline, so the form looks like the outline */
+    border:none;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.message-form textarea:focus, .message-form input:focus {
+    /* removing the input focus blue box. Put this on the form if you like. */
+    outline: none;
+}
+
+.message-form button {
+    /* Just a little styling to make it pretty */
+    font-size: 2em;
+    /*padding-right: 1em;*/
+    outline: none;
+    border: none;
+    background: none;
+    color: blue;
+}
+
+.message-me-wrapper {
+    background: rgba(0,0,0,10%);
+    border-radius: 50%;
+}
+
+.link-disabled {
+    cursor: not-allowed;
+}

@@ -1,0 +1,107 @@
+.application {
+    box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.2);
+}
+
+.app-header {
+    padding-top: 5px;
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 3px 3px 0 0;
+    display: grid;
+    grid-auto-columns: minmax(0, 1fr);
+    grid-auto-flow: column;
+}
+
+.app-menu > * {
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+/* #f44, 1.5em 0 0 2px #ffcf55, 3em 0 0 2px #38bb3 */
+
+.app-menu-close {
+    padding: 5px;
+    background: #f44;
+    border-radius: 50%;
+    border: #f44 3px solid;
+    cursor: pointer;
+}
+
+
+.app-menu-minimize {
+    padding: 5px;
+    background: #ffcf55;
+    border-radius: 50%;
+    border: #ffcf55 3px solid;
+    cursor: pointer;
+}
+
+
+.app-menu-screen {
+    padding: 5px;
+    background: #38bb33;
+    border-radius: 50%;
+    border: #38bb33 3px solid;
+    cursor: pointer;
+}
+
+.app-title {
+    /*margin: auto;*/
+    text-align: center;
+}
+
+.app-body {
+    background: white;
+    border-radius: 0 0 3px 3px;
+    min-height: 100px;
+}
+
+.dock-menu > .col .btn {
+    margin: 0.5em;
+    font-size: 3em;
+    width: 2em;
+    border-radius: 0.15em;
+    background: rgba(0, 0, 0, 0.03);
+
+}
+
+.message-form {
+    /* This bit sets up the horizontal layout */
+    display:flex;
+    flex-direction:row;
+
+    /* This bit draws the box around it */
+    border:1px solid rgba(0,0,0,10%);
+    border-radius: 1em;
+
+    /* I've used padding so you can see the edges of the elements. */
+    /*padding: 0.5em 1em;*/
+}
+
+.message-form textarea, .message-form input {
+    /* Tell the input to use all the available space */
+    flex-grow:2;
+    /* And hide the input's outline, so the form looks like the outline */
+    border:none;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.message-form textarea:focus, .message-form input:focus {
+    /* removing the input focus blue box. Put this on the form if you like. */
+    outline: none;
+}
+
+.message-form button {
+    /* Just a little styling to make it pretty */
+    font-size: 2em;
+    /*padding-right: 1em;*/
+    outline: none;
+    border: none;
+    background: none;
+    color: blue;
+}
+
+.message-me-wrapper {
+    background: rgba(0,0,0,10%);
+    border-radius: 50%;
+}

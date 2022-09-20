@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rin - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<!--    splide.js-->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/js/splide.min.js"></script>
+    <!-- or link to the CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.17/dist/css/splide.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -40%" tabindex="0">
+<section id="navigation">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-light p-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-700" href="#">
+<!--                    <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="?" width="30" height="24" class="d-inline-block align-text-top">-->
+                    Rin
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-500">
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#me">Home</a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+<!--                        <li class="nav-item me-3">-->
+<!--                            <a class="nav-link" href="#playground">Playground</a>-->
+<!--                        </li>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
+<div ></div>
+<section id="me">
+    <div class="container">
+        <div class="row justify-content-center align-items-center align-content-center p-5 min-vh-100 flex-column flex-md-row m-md-0 mt-5">
+            <div class="col text-center">
+                <img src="assets/img/me-apple-1.png" alt="" class="img-50 me-img" id="me-img">
+            </div>
+            <div class="col">
+                    <h1 class="fw-700">Hello, my name is Rin 👋</h1>
+                <small>Well... Chakkarin Laksanakesim but you can call me Rin!</small>
+<!--                <p>...actually its Chakkarin Laksanakesim, but you can call me Rin</p>-->
+                <br>
+                <p>
+                    I am an aspired <span class="fw-700">Developer</span>
+                    currently pursuing Bachelor of Science (Honours) in Computer Science (Infrastructure) at
+                    <a href="https://www.tudublin.ie/">Technological University Dublin</a>.
+                </p>
+                <div class="text-left">
+                    <a href="#portfolio" class="btn btn-primary pe-4 ps-4 pt-3 pb-3">Check out my Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center m-auto position-relative" style="transform: translateY(-100%)">
+        <a href="#portfolio"><i class="las la-angle-down more-arrow" style="font-size: 5em"></i></a>
+    </div>
+</section>
+
+<section id="portfolio" style="padding-top: 6em;">
+    <div class="container min-vh-100">
+        <div class="section-header text-center">
+            <h1 class="fw-700">Portfolio</h1>
+            <!--            <a href="#" class="btn btn-outline-primary active">All</a>-->
+            <!--            <a href="#" class="btn btn-outline-primary">Software</a>-->
+            <!--            <a href="#" class="btn btn-outline-primary">Website</a>-->
+            <!--            <a href="#" class="btn btn-outline-primary">Case Study</a>-->
+            <p>Here are some of my proudest projects</p>
+        </div>
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="">
+                <div class="splide__track p-5">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="card h-100">
+                                <img src="assets/img/portfolio1.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Machine Learning</h5>
+                                    <a href="#" class="tags"><small>#Software</small></a>
+                                    <br>
+                                    <p>Machine Learning Application built using Java and the Naive Bayes algorithm. This program was built to predict ascertain dataset fed into the program.
+                                        <!--                            <br><br>-->
+                                    </p>
+                                    <!--                        <p><i class="las la-tools"></i> <small>Java</small></p>-->
+                                </div>
+                                <div class="buttons text-center">
+                                    <a href="#" class="external-link"><i class="lab la-github"></i></a>
+                                    <a href="#" class="external-link"><i class="las la-external-link-alt"></i></a>
+                                </div>
+                                <div class="card-footer">
+                                    <small><i class="las la-graduation-cap"></i> Academic Assessment</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="card h-100">
+                                <img src="assets/img/portfolio2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product Management Dashboard</h5>
+                                    <a href="#" class="tags"><small>#Website</small></a>
+                                    <br>
+                                    <p>The dashboard is built to handle basic data management through the use of SQL. It was designed in a vision of a grocery store.
+                                        <!--                        <br><br>-->
+
+                                    </p>
+                                </div>
+                                <div class="buttons text-center">
+                                    <a href="#" class="external-link"><i class="lab la-github"></i></a>
+                                    <a href="#" class="external-link"><i class="las la-external-link-alt"></i></a>
+                                </div>
+                                <div class="card-footer">
+                                    <small><i class="las la-graduation-cap"></i> Academic Assessment</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="card h-100">
+                                <img src="assets/img/portfolio3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Leap Top-up Application</h5>
+                                    <a href="#" class="tags"><small>#CaseStudy</small></a>
+                                    <br>
+                                    <p>User Experience case study of the current (2021) Leap Top-up application. This project includes a redesign report
+                                        <!--                            <br><br>-->
+                                    </p>
+                                </div>
+                                <div class="buttons text-center">
+                                    <a href="#" class="external-link"><i class="las la-file-powerpoint"></i></a>
+                                    <a href="#" class="external-link"><i class="las la-file-word"></i></a>
+                                </div>
+                                <div class="card-footer">
+                                    <small><i class="las la-graduation-cap"></i> Academic Assessment</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="card h-100">
+                                <img src="assets/img/portfolio4.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Website Project with Blog Software</h5>
+                                    <a href="#" class="tags"><small>#Website</small></a>
+                                    <a href="#" class="tags"><small>#Software</small></a>
+                                    <br>
+                                    <p>Home-made simple blogging software for one of my Minecraft server project. Equipped with a Dashboard and TinyMCE editor.
+                                    </p>
+                                </div>
+                                <div class="buttons text-center">
+                                    <a href="#" class="external-link"><i class="lab la-github"></i></a>
+                                    <a href="#" class="external-link"><i class="las la-external-link-alt"></i></a>
+                                </div>
+                                <div class="card-footer">
+                                    <small><i class="las la-briefcase"></i> Personal Project </small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                        <div class="card h-100">
+                            <img src="assets/img/portfolio5.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Portfolio Website</h5>
+                                <a href="#" class="tags"><small>#Website</small></a>
+                                <br>
+                                <p>Previous version of my portfolio. I envisioned it as a more vibrant portfolio. This older version portrays the duality of my works</p>
+                            </div>
+                            <div class="buttons text-center">
+                                <a href="#" class="external-link"><i class="lab la-github"></i></a>
+                                <a href="#" class="external-link"><i class="las la-external-link-alt"></i></a>
+                            </div>
+                            <div class="card-footer">
+                                <small><i class="las la-briefcase"></i> Personal Project</small>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+
+                var splide = new Splide( '.splide', {
+                    perPage: 3,
+
+                    gap    : '2.5em',
+                    breakpoints: {
+                        992: {
+                            perPage: 1,
+                            gap    : '5em',
+                        },
+                        768: {
+                            perPage: 1,
+                            gap    : '5em',
+                        },
+                        576: {
+                            perPage: 1,
+                            gap    : '5em',
+                        },
+                    },
+                } );
+                splide.mount();
+
+            </script>
+        </section>
+        <div class="container">
+            <div class="mt-5 text-center">
+                <p>Check out more projects on my GitHub </p>
+                <a href="https://github.com/ariysx" class="github-link fw-700"><i class="lab la-github"></i> GitHub <i class="las la-arrow-right github-link-arrow"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--<section id="playground" style="padding-top: 6em;">-->
+<!--    <div class="container min-vh-100">-->
+<!--        <div class="section-header text-center">-->
+<!--            <h1 class="fw-700">Playground</h1>-->
+<!--            &lt;!&ndash;            <a href="#" class="btn btn-outline-primary active">All</a>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <a href="#" class="btn btn-outline-primary">Software</a>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <a href="#" class="btn btn-outline-primary">Website</a>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <a href="#" class="btn btn-outline-primary">Case Study</a>&ndash;&gt;-->
+<!--            <p style="font-style: italic">*RinOS boot up noises*</p>-->
+<!--        </div>-->
+<!--        <div id="rinos">-->
+<!--            <div class="application w-75 m-auto">-->
+<!--                <div class="app-header">-->
+<!--                    <div class="app-menu">-->
+<!--                        <div class="app-menu-close">-->
+
+<!--                        </div>-->
+<!--                        <div class="app-menu-minimize">-->
+
+<!--                        </div>-->
+<!--                        <div class="app-menu-screen">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="app-title">-->
+<!--                        <span>Auth</span>-->
+<!--                    </div>-->
+<!--                    <div class="app-header-empty">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="app-body p-5">-->
+<!--                    <div class="d-flex flex-column align-items-center">-->
+<!--                        <img src="assets/img/me-apple-4.png" alt="" style="width: 10em; height: auto">-->
+<!--                        <p>Welcome back, <span class="fw-700">Rin</span></p>-->
+<!--                        <form action="" class="message-form">-->
+<!--                            <input type="text" placeholder="Password" type="password">-->
+<!--                            <button><i class="las la-arrow-circle-right"></i></button>-->
+<!--                        </form>-->
+<!--                        &lt;!&ndash;                    <button class="btn btn-primary">Hint</button>&ndash;&gt;-->
+<!--                        <br>-->
+<!--                        <small class="hint"><span class="fw-700">Hint</span>: π (Pi) with 3 decimal places</small>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="docker">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col">-->
+
+<!--                        </div>-->
+<!--                        <div class="col">-->
+
+<!--                        </div>-->
+<!--                        <div class="col">-->
+
+<!--                        </div>-->
+<!--                        <div class="col">-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<section id="contact" style="padding-top: 6em">
+    <div class="container min-vh-100">
+        <div class="section-header text-center">
+            <h1 class="fw-700">Contact</h1>
+            <p>Let's Connect!</p>
+        </div>
+        <div class="messenger">
+            <div class="messenger-header">
+                <!-- Center the div to take 1/3 of the container-->
+                <div class="row">
+<!--                    empty col -->
+                    <div class="col"></div>
+                    <div class="col-12 col-lg">
+                        <!-- Actual content -->
+                        <div class="row justify-content-center align-items-center">
+<!--                            placeholder col for go back button (non-functional)-->
+                            <div class="col">
+                                <span class="external-link link-disabled" style="opacity: 0.2"><i class="las la-angle-left"></i></span>
+                            </div>
+                            <div class="col text-center">
+                                <img src="assets/img/me-apple-3.png" alt="" class="me-img message-me-wrapper p-1" style="width: 5em; height: auto">
+                                <p>Rin</p>
+                            </div>
+<!--                            placeholder col for call button (non-functional) -->
+                            <div class="col text-right">
+                                <span class="external-link link-disabled" style="opacity: 0.2"><i class="las la-phone"></i></span>
+                            </div>
+                        </div>
+                    </div>
+<!--                    empty col -->
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="messenger-body">
+                <!-- Take 1/3 of the container -->
+                <div class="row">
+<!--                    Empty col-->
+                    <div class="col"></div>
+                    <!-- Actual content -->
+                    <div class="col-12 col-lg">
+                        <div id="messages">
+                            <div class="w-75">
+                                <span class="message-me">Type the message below and send to get in touch with me! 👋</span>
+                            </div>
+                            <div class="w-75">
+                                <span class="message-me">Don't forget to include your contact, so I can reach back to you!</span>
+                            </div>
+                        </div>
+                        <div class="message-form mt-5">
+                            <label for="message-content"></label><textarea name="message-content" id="message-content" rows="1" placeholder="Text Message"></textarea>
+                            <button onclick="sendMessage()"><i class="las la-arrow-circle-up"></i></button>
+                        </div>
+                    </div>
+<!--                    empty col-->
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <div class="text-center">
+            <p>Made with <span style="color: pink">&hearts;</span> by Rin<br>
+<!--                <span>Assets: <a href="https://icons8.com">Icons8</a></span>-->
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="js/random-me.js"></script>
+<script src="js/message-me.js" defer></script>
+</body>
+</html>
